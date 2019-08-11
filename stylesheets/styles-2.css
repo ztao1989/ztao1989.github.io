@@ -1,0 +1,7 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700italic,700);
+
+body {
+  font: 16px/1.5 Arial, Helvetica, sans-serif;
+  color:#000;
+  font-weight:400;
+}
