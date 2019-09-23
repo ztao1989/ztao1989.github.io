@@ -50,10 +50,10 @@ My research focuses on feature representation learning with reconstruction and i
 <p></p>
 <h3> Learnable Ensemble Clustering </h3>
 
-<p><img src="images/LearnableEC.jpg" width="320" style="float:right; margin:0px 10px 2px -10px;" /></p>
+<p><img src="images/LearnableEC.jpg" width="300" style="float:right; margin:0px 10px 0px 0px;" /></p>
 <p>Ensemble clustering (EC) takes as input a set of basic partitions (i.e., clustering results obtained by different methods or settings) and integrates these basic partitions into a consensus one, which is a robust alternative to the traditional clustering algorithm. Existing EC methods mainly summarize partitions as a consensus graph (a.k.a. co-association matrix), and directly conduct graph partitioning to achieve consensus clustering, which, however, neglect to reuse the rich information from raw features as well as to further explore the partition-level representations. Due to these two limitations, EC methods may degrade on several cases. </p>
 
-<p><img src="images/agae.jpg" width="300" style="float:right; margin:0px 10px 2px 0px;" /></p>
+<p><img src="images/agae.jpg" width="300" style="float:right; margin:0px 10px 0px 0px;" /></p>
 <p> 
 	In this research project, we aim to continuously improve the ensemble clustering by feature enhanced method (simultaneous clustering and ensemble), low-rank representations (robust spectral ensemble clustering), and jointly encoding feature content and consensus graph (adversarial graph embedding). One of our recent research projects is to transform ensemble clustering as a graph embedding process, where we leverage graph convolutional network to model the distribution over the embedding space and adopt the adversarial training as an effective regularizer. The entire learning process is guided by the graph reconstruction loss with a clustering-induced prior. 
 </p>
@@ -89,7 +89,7 @@ My research focuses on feature representation learning with reconstruction and i
 <p>Multi-view data usually refer to a more general concept beyond the multiple geometric views, which could be the data collected from various of sources, modalities captured by multiple sensors, and the feature representations with different methods. 
 </p>
 
-<p><img src="images/mvec.jpg" width="350" style="float:right; margin:0px 10px 2px 0px;" /></p>
+<p><img src="images/mvec.jpg" width="300" style="float:right; margin:0px 10px 0px 0px;" /></p>
 <p>
 Multi-view clustering (MVC) aims to group the similar data by jointly considering all the views, where the key factor is to leverage the complementary information from different views. However, due to the distinct gap between different feature domains, it is not an easy task to directly learn a common space across multiple views. In light of this, we explore the complementary information in higher-level over the original feature space, i.e., upon the partition space by ensemble clustering or the hidden space by deep neural networks. In this project, we design and build deep MVC model by using stacked marginalized denoising auto-encoders with multi-view partitions, employing convolutional neural networks on multi-view images, and utilizing generative adversarial networks (GAN) for incomplete multi-view data.
 </p>
@@ -117,14 +117,14 @@ Qianqian Wang, Zhengming Ding, <strong>Zhiqiang Tao</strong>, Quanxue Gao, and Y
 <p></p>
 <h3> Interpretable User Modeling</h3>
 
-<p><img src="images/userdata.jpg" width="360" style="float:right; margin:0px 10px 2px 0px;" /></p>
+<p><img src="images/userdata.jpg" width="300" style="float:right; margin:0px 10px 0px 0px;" /></p>
 <p>
 	User modeling targets to learn generic user representations to facilitate the downstream tasks, such as personalization, profiling, cross-platform recommendation, and understanding user behavior. Existing methods mainly focus on the structured user data (e.g., click-through data, user content, review, etc), which is usually presented with a clear schema and easy to be interpreted. However, the unstructured user data, which usually encrypts user's long-term usage habit and is intuitively more close to user intention, has not been well explored yet. For example, the user log-trace history records the user daily activities and provides rich sequential data.
 </p>
 
 
 
-<p><img src="images/logseq.jpg" width="450" style="float:left; margin:0px 10px 2px 0px;" /></p>
+<p><img src="images/logseq.jpg" width="320" style="float:left; margin:0px 10px 0px 0px;" /></p>
 <p> Our research study is one of the pioneering attempts to develop an interpretable user model upon the user log history along with auxiliary software tutorials. We build on the top of a sequence-to-sequence model, and designs two encoding pathways to jointly capture the temporal context from user log sequences and the semantic information from tutorial text annotations. We propose a recurrent memory network to link these two sources, which recurrently queries the tutorial memories with the temporal context, and thus interprets the user log with attention mechanism. A recurrent neural network based decoder is used to predict the user next action. Our study shows the great potential of using log-trace data for the user personalization tasks, such as detecting user interest across platforms.
 </p>
 
@@ -147,7 +147,7 @@ Translating low-level vision data (e.g., image and video) into high-level semant
 
 <h4> Image Cosegmentation</h4>
 
-<p><img src="images/seg-vis.jpg" width="400" style="float:left; margin:0px 10px 2px 0px;" /></p>
+<p><img src="images/seg-vis.jpg" width="300" style="float:left; margin:0px 10px 0px 0px;" /></p>
 <p>
 Image cosegmentation is an important extension to single image segmentation, which tries to simultaneously segment out the common objects from multiple images. Previous methods mainly solve it via a graph model by transforming cosegmentation as common nodes selection. This kind of methods, however, might be sensitive to graph definition and inflexible to incorporate other vision cues. Our research project formulates image cosegmentation as a constrained clustering process, where the unsupervised saliency prior is used to alleviate background noises and provide partition-level guidance. A multi-view K-means-like optimization solution is provided to obtain cosegmentation results in a nearly linear time complexity. 
 </p>
@@ -166,7 +166,7 @@ Image cosegmentation is an important extension to single image segmentation, whi
 
 <h4> Video Action Analysis</h4>
 
-<p><img src="images/action-pred.jpg" width="400" style="float:right; margin:0px 10px 2px -5px;" /></p>
+<p><img src="images/action-pred.jpg" width="320" style="float:right; margin:0px 10px 0px 0px;" /></p>
 <p>
 	Video action prediction and multi-view video action recognition are two challenging tasks for video understating, where the challenges raise at the the incomplete information of partially-observed videos for action prediction and the gap between heterogeneous feature domains for multi-view action recognition. In our research study, we resort to generative model to address these challenges, such as using auto-encoder to map partial video features to the full videos, adopting variational GANs to generate complete video features conditioning on the partial ones, and designing multi-view GANs to bridge the gap between different video modalities.
 </p>
